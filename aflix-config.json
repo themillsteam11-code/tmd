@@ -1,0 +1,48 @@
+{
+  "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
+
+  "tmdb_api_key": "YOUR_TMDB_API_KEY_HERE",
+  "tmdb_base": "https://api.themoviedb.org/3",
+
+  "servers": [
+    {
+      "id": "vidsrc-cc",
+      "name": "VidSrc",
+      "imdb": false,
+      "movie_url": "https://vidsrc.cc/v2/embed/movie/{id}",
+      "tv_url": "https://vidsrc.cc/v2/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "id": "vembed",
+      "name": "VEmbed",
+      "imdb": false,
+      "movie_url": "https://vembed.stream/play/{id}",
+      "tv_url": "https://vembed.stream/play/{id}_s{s}"
+    },
+    {
+      "id": "vidsrc-to",
+      "name": "VidSrc 2",
+      "imdb": true,
+      "movie_url": "https://vidsrc.to/embed/movie/{id}",
+      "tv_url": "https://vidsrc.to/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "id": "vidsrc-xyz",
+      "name": "VidSrc 3",
+      "imdb": true,
+      "movie_url": "https://vidsrc.xyz/embed/movie/{id}",
+      "tv_url": "https://vidsrc.xyz/embed/tv/{id}/{s}/{e}"
+    }
+  ],
+
+  "iptv_playlists": [
+    {
+      "name": "My IPTV",
+      "url": "https://example.com/my-playlist.m3u"
+    },
+    {
+      "name": "Free TV",
+      "url": "https://iptv-org.github.io/iptv/index.m3u"
+    }
+  ]
+}
