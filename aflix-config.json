@@ -1,7 +1,7 @@
 {
   "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
 
-  "tmdb_api_key": "YOUR_TMDB_API_KEY_HERE",
+  "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
 
   "servers": [
