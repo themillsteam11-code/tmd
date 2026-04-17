@@ -31,11 +31,11 @@
     },
     {
       "id": "vidsrc-ts",
-      "name": "VidLink",
+      "name": "VidSrc SBS",
       "imdb": false,
       "hls": false,
-      "movie_url": "https://vidlink.pro/movie/{id}",
-      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}"
+      "movie_url": "https://vidsrc.sbs/embed/movie/{id}",
+      "tv_url": "https://vidsrc.sbs/embed/tv/{id}/{s}/{e}"
     }
   ],
 
