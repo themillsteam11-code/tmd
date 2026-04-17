@@ -1,5 +1,6 @@
 {
   "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
+  "_proxy_note": "Replace PROXY_URL with your deployed aflix-proxy Vercel URL e.g. https://aflix-proxy.vercel.app",
 
   "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
@@ -34,8 +35,8 @@
       "name": "VidSrc SBS",
       "imdb": false,
       "hls": false,
-      "movie_url": "https://vidsrc.sbs/embed/movie/{id}",
-      "tv_url": "https://vidsrc.sbs/embed/tv/{id}/{s}/{e}"
+      "movie_url": "https://aflix-proxy.vercel.app//api/proxy?url=https%3A%2F%2Fvidsrc.sbs%2Fembed%2Fmovie%2F{id}",
+      "tv_url": "https://aflix-proxy.vercel.app//api/proxy?url=https%3A%2F%2Fvidsrc.sbs%2Fembed%2Ftv%2F{id}%2F{s}%2F{e}"
     }
   ],
 
