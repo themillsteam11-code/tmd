@@ -9,6 +9,7 @@
       "id": "vidsrc-cc",
       "name": "VidSrc",
       "imdb": false,
+      "hls": false,
       "movie_url": "https://vidsrc.cc/v2/embed/movie/{id}",
       "tv_url": "https://vidsrc.cc/v2/embed/tv/{id}/{s}/{e}"
     },
@@ -16,6 +17,7 @@
       "id": "vembed",
       "name": "VEmbed",
       "imdb": false,
+      "hls": false,
       "movie_url": "https://vembed.stream/play/{id}",
       "tv_url": "https://vembed.stream/play/{id}_s{s}"
     },
@@ -23,15 +25,17 @@
       "id": "vidsrc-to",
       "name": "VidSrc 2",
       "imdb": true,
+      "hls": false,
       "movie_url": "https://vidsrc.to/embed/movie/{id}",
       "tv_url": "https://vidsrc.to/embed/tv/{id}/{s}/{e}"
     },
     {
-      "id": "vidsrc-xyz",
-      "name": "VidSrc 3",
-      "imdb": true,
-      "movie_url": "https://vidsrc.xyz/embed/movie/{id}",
-      "tv_url": "https://vidsrc.xyz/embed/tv/{id}/{s}/{e}"
+      "id": "vidsrc-ts",
+      "name": "VidSrc TS",
+      "imdb": false,
+      "hls": true,
+      "movie_url": "https://vidsrcs.vercel.app/api?id={id}&type=movie",
+      "tv_url": "https://vidsrcs.vercel.app/api?id={id}&type=tv&season={s}&episode={e}"
     }
   ],
 
