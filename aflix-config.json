@@ -34,8 +34,8 @@
       "name": "VidSrc TS",
       "imdb": false,
       "hls": true,
-      "movie_url": "https://vidsrcs.vercel.app/api?id={id}&type=movie",
-      "tv_url": "https://vidsrcs.vercel.app/api?id={id}&type=tv&season={s}&episode={e}"
+      "movie_url": "https://vidsrcs.vercel.app/{id}",
+      "tv_url": "https://vidsrcs.vercel.app/{id}/{s}/{e}"
     }
   ],
 
