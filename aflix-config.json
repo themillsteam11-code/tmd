@@ -31,11 +31,11 @@
     },
     {
       "id": "vidsrc-ts",
-      "name": "VidSrc TS",
+      "name": "VidLink",
       "imdb": false,
-      "hls": true,
-      "movie_url": "https://vidsrcs.vercel.app/{id}",
-      "tv_url": "https://vidsrcs.vercel.app/{id}/{s}/{e}"
+      "hls": false,
+      "movie_url": "https://vidlink.pro/movie/{id}",
+      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}"
     }
   ],
 
