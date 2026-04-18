@@ -4,6 +4,42 @@
   "tmdb_base": "https://api.themoviedb.org/3",
   "servers": [
     {
+      "id": "videasy",
+      "name": "Videasy",
+      "badge": "4K",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://player.videasy.net/movie/{id}?autoplay=true&color=e8192c",
+      "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}?autoplay=true&color=e8192c&nextEpisode=true"
+    },
+    {
+      "id": "vidlink",
+      "name": "VidLink",
+      "badge": "4K",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c&iconColor=e8192c",
+      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c&iconColor=e8192c"
+    },
+    {
+      "id": "autoembed",
+      "name": "AutoEmbed",
+      "badge": "1080p",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://player.autoembed.cc/embed/movie/{id}?autoplay=true",
+      "tv_url": "https://player.autoembed.cc/embed/tv/{id}/{s}/{e}?autoplay=true"
+    },
+    {
+      "id": "vidfast",
+      "name": "VidFast",
+      "badge": "4K",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://vidfast.pro/movie/{id}?autoPlay=true&theme=e8192c",
+      "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}?autoPlay=true&theme=e8192c"
+    },
+    {
       "id": "vidsrc-cc",
       "name": "VidSrc",
       "badge": "1080p",
@@ -20,24 +56,6 @@
       "imdb": false,
       "movie_url": "https://vembed.stream/play/{id}",
       "tv_url": "https://vembed.stream/play/{id}_s{s}"
-    },
-    {
-      "id": "vidsrc-to",
-      "name": "VidSrc 2",
-      "badge": "1080p",
-      "badge2": "",
-      "imdb": true,
-      "movie_url": "https://vidsrc.to/embed/movie/{id}",
-      "tv_url": "https://vidsrc.to/embed/tv/{id}/{s}/{e}"
-    },
-    {
-      "id": "vidsrc-xyz",
-      "name": "VidSrc 3",
-      "badge": "1080p",
-      "badge2": "",
-      "imdb": true,
-      "movie_url": "https://vidsrc.xyz/embed/movie/{id}",
-      "tv_url": "https://vidsrc.xyz/embed/tv/{id}/{s}/{e}"
     }
   ],
   "iptv_playlists": [
