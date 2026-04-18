@@ -1,16 +1,24 @@
 {
-  "_comment": "AFlix remote config \u2014 host this file on GitHub at a public raw URL. The HTML never contains your API key.",
+  "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
   "_proxy_note": "Replace PROXY_URL with your deployed aflix-proxy Vercel URL e.g. https://aflix-proxy.vercel.app",
   "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
   "servers": [
+    {
+      "id": "vidlink_direct",
+      "name": "VidLink",
+      "badge": "Direct",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "VIDLINK_DIRECT",
+      "tv_url": "VIDLINK_DIRECT"
+    },
     {
       "id": "videasy",
       "name": "Videasy",
       "badge": "4K",
       "badge2": "No Ads",
       "imdb": false,
-      "hls": false,
       "movie_url": "https://player.videasy.net/movie/{id}?autoplay=true&color=e8192c",
       "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}?autoplay=true&color=e8192c&nextEpisode=true"
     },
@@ -20,7 +28,6 @@
       "badge": "1080p",
       "badge2": "No Ads",
       "imdb": false,
-      "hls": false,
       "movie_url": "https://player.autoembed.cc/embed/movie/{id}?autoplay=true",
       "tv_url": "https://player.autoembed.cc/embed/tv/{id}/{s}/{e}?autoplay=true"
     },
@@ -30,7 +37,6 @@
       "badge": "4K",
       "badge2": "",
       "imdb": false,
-      "hls": false,
       "movie_url": "https://vidfast.pro/movie/{id}?autoPlay=true&theme=e8192c",
       "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}?autoPlay=true&theme=e8192c"
     },
@@ -40,7 +46,6 @@
       "badge": "1080p",
       "badge2": "No Ads",
       "imdb": false,
-      "hls": false,
       "movie_url": "https://vidsrc.icu/embed/movie/{id}",
       "tv_url": "https://vidsrc.icu/embed/tv/{id}/{s}/{e}"
     },
@@ -50,7 +55,6 @@
       "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "hls": false,
       "movie_url": "https://vidsrc.me/embed/movie?tmdb={id}",
       "tv_url": "https://vidsrc.me/embed/tv?tmdb={id}&season={s}&episode={e}"
     },
@@ -60,7 +64,6 @@
       "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "hls": false,
       "movie_url": "https://www.2embed.online/embed/movie/{id}",
       "tv_url": "https://www.2embed.online/embed/tv/{id}/{s}/{e}"
     }
@@ -78,7 +81,7 @@
   "auth_enabled": true,
   "users": [
     {
-      "_comment": "Add entries here using aflix-keygen.html. Example entry below \u2014 replace with real generated values.",
+      "_comment": "Add entries here using aflix-keygen.html. Example entry below — replace with real generated values.",
       "username": "example",
       "hash": "REPLACE_WITH_HASH_FROM_KEYGEN"
     }
