@@ -1,79 +1,15 @@
 {
-  "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
-  "_proxy_note": "Replace PROXY_URL with your deployed aflix-proxy Vercel URL e.g. https://aflix-proxy.vercel.app",
+  "_comment": "AFlix remote config — host this file on GitHub at a public raw URL.",
   "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
-  "_servers_note": "Ordered cleanest-first. pstream and vidora are ad-free by design. autoembed and vidsrc.icu are low-ad. vidlink embed is fallback. vidsrc.me and 2embed removed — too popup-heavy.",
-  "servers": [
-    {
-      "id": "pstream",
-      "name": "PStream",
-      "badge": "1080p",
-      "badge2": "No Ads",
-      "imdb": false,
-      "movie_url": "https://iframe.pstream.org/media/tmdb-movie-{id}",
-      "tv_url": "https://iframe.pstream.org/media/tmdb-tv-{id}/{s}/{e}"
-    },
-    {
-      "id": "vidora",
-      "name": "Vidora",
-      "badge": "1080p",
-      "badge2": "No Ads",
-      "imdb": false,
-      "movie_url": "https://vidora.su/movie/{id}",
-      "tv_url": "https://vidora.su/tv/{id}/{s}/{e}"
-    },
-    {
-      "id": "autoembed",
-      "name": "AutoEmbed",
-      "badge": "1080p",
-      "badge2": "Clean",
-      "imdb": false,
-      "movie_url": "https://player.autoembed.cc/embed/movie/{id}?autoplay=true",
-      "tv_url": "https://player.autoembed.cc/embed/tv/{id}/{s}/{e}?autoplay=true"
-    },
-    {
-      "id": "vidsrc_icu",
-      "name": "VidSrc",
-      "badge": "1080p",
-      "badge2": "Clean",
-      "imdb": false,
-      "movie_url": "https://vidsrc.icu/embed/movie/{id}",
-      "tv_url": "https://vidsrc.icu/embed/tv/{id}/{s}/{e}"
-    },
-    {
-      "id": "embedsu",
-      "name": "Embed.su",
-      "badge": "1080p",
-      "badge2": "",
-      "imdb": false,
-      "movie_url": "https://embed.su/embed/movie/{id}",
-      "tv_url": "https://embed.su/embed/tv/{id}/{s}/{e}"
-    },
-    {
-      "id": "vidlink",
-      "name": "VidLink",
-      "badge": "1080p",
-      "badge2": "",
-      "imdb": false,
-      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c&iconColor=e8192c",
-      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c&iconColor=e8192c"
-    }
-  ],
   "iptv_playlists": [
-    {
-      "name": "My IPTV",
-      "url": "https://example.com/my-playlist.m3u"
-    },
-    {
-      "name": "Free TV",
-      "url": "https://iptv-org.github.io/iptv/index.m3u"
-    }
+    { "name": "My IPTV", "url": "https://example.com/my-playlist.m3u" },
+    { "name": "Free TV", "url": "https://iptv-org.github.io/iptv/index.m3u" }
   ],
   "auth_enabled": true,
   "users": [
     {
-      "_comment": "Add entries here using aflix-keygen.html. Example entry below — replace with real generated values.",
+      "_comment": "Add entries here using aflix-keygen.html.",
       "username": "example",
       "hash": "REPLACE_WITH_HASH_FROM_KEYGEN"
     }
