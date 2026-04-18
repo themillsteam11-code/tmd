@@ -3,69 +3,61 @@
   "_proxy_note": "Replace PROXY_URL with your deployed aflix-proxy Vercel URL e.g. https://aflix-proxy.vercel.app",
   "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
+  "_servers_note": "Ordered cleanest-first. pstream and vidora are ad-free by design. autoembed and vidsrc.icu are low-ad. vidlink embed is fallback. vidsrc.me and 2embed removed — too popup-heavy.",
   "servers": [
     {
-      "id": "vidlink_direct",
-      "name": "VidLink",
-      "badge": "Direct",
+      "id": "pstream",
+      "name": "PStream",
+      "badge": "1080p",
       "badge2": "No Ads",
       "imdb": false,
-      "movie_url": "VIDLINK_DIRECT",
-      "tv_url": "VIDLINK_DIRECT"
+      "movie_url": "https://iframe.pstream.org/media/tmdb-movie-{id}",
+      "tv_url": "https://iframe.pstream.org/media/tmdb-tv-{id}/{s}/{e}"
     },
     {
-      "id": "videasy",
-      "name": "Videasy",
-      "badge": "4K",
+      "id": "vidora",
+      "name": "Vidora",
+      "badge": "1080p",
       "badge2": "No Ads",
       "imdb": false,
-      "movie_url": "https://player.videasy.net/movie/{id}?autoplay=true&color=e8192c",
-      "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}?autoplay=true&color=e8192c&nextEpisode=true"
+      "movie_url": "https://vidora.su/movie/{id}",
+      "tv_url": "https://vidora.su/tv/{id}/{s}/{e}"
     },
     {
       "id": "autoembed",
       "name": "AutoEmbed",
       "badge": "1080p",
-      "badge2": "No Ads",
+      "badge2": "Clean",
       "imdb": false,
       "movie_url": "https://player.autoembed.cc/embed/movie/{id}?autoplay=true",
       "tv_url": "https://player.autoembed.cc/embed/tv/{id}/{s}/{e}?autoplay=true"
     },
     {
-      "id": "vidfast",
-      "name": "VidFast",
-      "badge": "4K",
-      "badge2": "",
-      "imdb": false,
-      "movie_url": "https://vidfast.pro/movie/{id}?autoPlay=true&theme=e8192c",
-      "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}?autoPlay=true&theme=e8192c"
-    },
-    {
       "id": "vidsrc_icu",
       "name": "VidSrc",
       "badge": "1080p",
-      "badge2": "No Ads",
+      "badge2": "Clean",
       "imdb": false,
       "movie_url": "https://vidsrc.icu/embed/movie/{id}",
       "tv_url": "https://vidsrc.icu/embed/tv/{id}/{s}/{e}"
     },
     {
-      "id": "vidsrc_me",
-      "name": "VidSrc.me",
+      "id": "embedsu",
+      "name": "Embed.su",
       "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "movie_url": "https://vidsrc.me/embed/movie?tmdb={id}",
-      "tv_url": "https://vidsrc.me/embed/tv?tmdb={id}&season={s}&episode={e}"
+      "movie_url": "https://embed.su/embed/movie/{id}",
+      "tv_url": "https://embed.su/embed/tv/{id}/{s}/{e}"
     },
     {
-      "id": "2embed",
-      "name": "2Embed",
+      "id": "vidlink",
+      "name": "VidLink",
       "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "movie_url": "https://www.2embed.online/embed/movie/{id}",
-      "tv_url": "https://www.2embed.online/embed/tv/{id}/{s}/{e}"
+      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c&iconColor=e8192c",
+      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c&iconColor=e8192c"
     }
   ],
   "iptv_playlists": [
