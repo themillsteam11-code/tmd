@@ -1,5 +1,5 @@
 {
-  "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
+  "_comment": "AFlix remote config \u2014 host this file on GitHub at a public raw URL. The HTML never contains your API key.",
   "_proxy_note": "Replace PROXY_URL with your deployed aflix-proxy Vercel URL e.g. https://aflix-proxy.vercel.app",
   "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
@@ -73,6 +73,14 @@
     {
       "name": "Free TV",
       "url": "https://iptv-org.github.io/iptv/index.m3u"
+    }
+  ],
+  "auth_enabled": true,
+  "users": [
+    {
+      "_comment": "Add entries here using aflix-keygen.html. Example entry below \u2014 replace with real generated values.",
+      "username": "example",
+      "hash": "REPLACE_WITH_HASH_FROM_KEYGEN"
     }
   ]
 }
