@@ -1,45 +1,70 @@
 {
   "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
   "_proxy_note": "Replace PROXY_URL with your deployed aflix-proxy Vercel URL e.g. https://aflix-proxy.vercel.app",
-
   "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
   "tmdb_base": "https://api.themoviedb.org/3",
-
   "servers": [
     {
-      "id": "vidsrc-cc",
-      "name": "VidSrc",
+      "id": "videasy",
+      "name": "Videasy",
+      "badge": "4K",
+      "badge2": "No Ads",
       "imdb": false,
       "hls": false,
-      "movie_url": "https://vidsrc.cc/v2/embed/movie/{id}",
-      "tv_url": "https://vidsrc.cc/v2/embed/tv/{id}/{s}/{e}"
+      "movie_url": "https://player.videasy.net/movie/{id}?autoplay=true&color=e8192c",
+      "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}?autoplay=true&color=e8192c&nextEpisode=true"
     },
     {
-      "id": "vembed",
-      "name": "VEmbed",
+      "id": "autoembed",
+      "name": "AutoEmbed",
+      "badge": "1080p",
+      "badge2": "No Ads",
       "imdb": false,
       "hls": false,
-      "movie_url": "https://vembed.stream/play/{id}",
-      "tv_url": "https://vembed.stream/play/{id}_s{s}"
+      "movie_url": "https://player.autoembed.cc/embed/movie/{id}?autoplay=true",
+      "tv_url": "https://player.autoembed.cc/embed/tv/{id}/{s}/{e}?autoplay=true"
     },
     {
-      "id": "vidsrc-to",
-      "name": "VidSrc 2",
-      "imdb": true,
-      "hls": false,
-      "movie_url": "https://vidsrc.to/embed/movie/{id}",
-      "tv_url": "https://vidsrc.to/embed/tv/{id}/{s}/{e}"
-    },
-    {
-      "id": "vidsrc-ts",
-      "name": "VidSrc SBS",
+      "id": "vidfast",
+      "name": "VidFast",
+      "badge": "4K",
+      "badge2": "",
       "imdb": false,
       "hls": false,
-      "movie_url": "https://aflix-proxy.vercel.app//api/proxy?url=https%3A%2F%2Fvidsrc.sbs%2Fembed%2Fmovie%2F{id}",
-      "tv_url": "https://aflix-proxy.vercel.app//api/proxy?url=https%3A%2F%2Fvidsrc.sbs%2Fembed%2Ftv%2F{id}%2F{s}%2F{e}"
+      "movie_url": "https://vidfast.pro/movie/{id}?autoPlay=true&theme=e8192c",
+      "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}?autoPlay=true&theme=e8192c"
+    },
+    {
+      "id": "vidlink",
+      "name": "VidLink",
+      "badge": "1080p",
+      "badge2": "No Ads",
+      "imdb": false,
+      "hls": false,
+      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c&iconColor=e8192c",
+      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c&iconColor=e8192c"
+    },
+    {
+      "id": "embedsu",
+      "name": "Embed.su",
+      "badge": "1080p",
+      "badge2": "",
+      "imdb": false,
+      "hls": false,
+      "movie_url": "https://embed.su/embed/movie/{id}",
+      "tv_url": "https://embed.su/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "id": "vidbinge",
+      "name": "MoviesAPI",
+      "badge": "1080p",
+      "badge2": "",
+      "imdb": false,
+      "hls": false,
+      "movie_url": "https://moviesapi.club/movie/{id}",
+      "tv_url": "https://moviesapi.club/tv/{id}-{s}-{e}"
     }
   ],
-
   "iptv_playlists": [
     {
       "name": "My IPTV",
