@@ -9,8 +9,8 @@
       "id": "vidsrc-cc",
       "name": "VidSrc",
       "imdb": false,
-      "movie_url": "https://vidsrc.cc/v2/embed/movie/{id}",
-      "tv_url": "https://vidsrc.cc/v2/embed/tv/{id}/{s}/{e}"
+      "movie_url": "https://vidsrc-me.ru/embed/movie/{id}",
+      "tv_url": "https://vidsrc-me.ru/embed/tv/{id}/{s}/{e}"
     },
     {
       "id": "vembed",
