@@ -6,20 +6,55 @@
 
   "servers": [
     {
-      "id": "vidsrc-cc",
-      "name": "VidSrc",
+      "id": "vidlink",
+      "name": "VidLink",
+      "badge": "1080p",
+      "badge2": "",
       "imdb": false,
-      "movie_url": "https://vidsrc-me.ru/embed/movie/{id}",
-      "tv_url": "https://vidsrc-me.ru/embed/tv/{id}/{s}/{e}"
+      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c",
+      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c"
     },
     {
-      "id": "vembed",
-      "name": "VEmbed",
+      "id": "autoembed",
+      "name": "AutoEmbed",
+      "badge": "1080p",
+      "badge2": "",
       "imdb": false,
-      "movie_url": "https://vembed.stream/play/{id}",
-      "tv_url": "https://vembed.stream/play/{id}_s{s}"
+      "movie_url": "https://player.autoembed.cc/embed/movie/{id}",
+      "tv_url": "https://player.autoembed.cc/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "id": "2embed",
+      "name": "2Embed",
+      "badge": "HD",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://www.2embed.cc/embed/{id}",
+      "tv_url": "https://www.2embed.cc/embedtv/{id}&s={s}&e={e}"
+    },
+    {
+      "id": "vidsrc-cc",
+      "name": "VidSrc",
+      "badge": "1080p",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://vidsrc.cc/v2/embed/movie/{id}",
+      "tv_url": "https://vidsrc.cc/v2/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "id": "flixhq",
+      "name": "FlixHQ",
+      "badge": "4K",
+      "badge2": "No Ads",
+      "imdb": false,
+      "_consumet": true,
+      "_api": "https://api.consumet.org",
+      "movie_url": "consumet:movie:{id}",
+      "tv_url": "consumet:tv:{id}:{s}:{e}"
     }
   ],
+
+  "_consumet_note": "FlixHQ uses the consumet API for direct HLS streams — zero ads, zero iframes. Self-host at https://github.com/consumet/api.consumet.org and update _api above, or use a public instance (may be slow/intermittent).",
 
   "iptv_playlists": [
     {
