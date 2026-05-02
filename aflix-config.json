@@ -1,47 +1,81 @@
-"servers": [
-  {
-    "id": "pstream",
-    "name": "PStream",
-    "badge": "1080p",
-    "badge2": "No Ads",
-    "imdb": false,
-    "movie_url": "https://iframe.pstream.org/embed/tmdb-movie/{id}",
-    "tv_url": "https://iframe.pstream.org/embed/tmdb-tv/{id}/{s}/{e}"
-  },
-  {
-    "id": "vidora",
-    "name": "Vidora",
-    "badge": "1080p",
-    "badge2": "No Ads",
-    "imdb": false,
-    "movie_url": "https://vidora.su/movie/{id}",
-    "tv_url": "https://vidora.su/tv/{id}/{s}/{e}"
-  },
-  {
-    "id": "vidfast",
-    "name": "VidFast",
-    "badge": "4K",
-    "badge2": "",
-    "imdb": false,
-    "movie_url": "https://vidfast.pro/movie/{id}",
-    "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}"
-  },
-  {
-    "id": "videasy",
-    "name": "Videasy",
-    "badge": "4K",
-    "badge2": "",
-    "imdb": false,
-    "movie_url": "https://player.videasy.net/movie/{id}",
-    "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}"
-  },
-  {
-    "id": "vidlink",
-    "name": "VidLink",
-    "badge": "1080p",
-    "badge2": "",
-    "imdb": false,
-    "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c",
-    "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c"
-  }
-]
+{
+  "_comment": "AFlix remote config — host this file on GitHub at a public raw URL. The HTML never contains your API key.",
+  "tmdb_api_key": "9f20264e020e89c944be3370bb0f2f94",
+  "tmdb_base": "https://api.themoviedb.org/3",
+  "servers": [
+    {
+      "_comment": "PStream — explicitly ad-free, TMDB IDs, clean iframe.",
+      "id": "pstream",
+      "name": "PStream",
+      "badge": "1080p",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://iframe.pstream.org/embed/tmdb-movie/{id}",
+      "tv_url": "https://iframe.pstream.org/embed/tmdb-tv/{id}/{s}/{e}"
+    },
+    {
+      "_comment": "Vidora — explicitly ad-free, TMDB IDs.",
+      "id": "vidora",
+      "name": "Vidora",
+      "badge": "1080p",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://vidora.su/movie/{id}",
+      "tv_url": "https://vidora.su/tv/{id}/{s}/{e}"
+    },
+    {
+      "_comment": "VidFast — clean player, 4K/1080p, supports Movies/TV/Anime. Has PostMessage API for control.",
+      "id": "vidfast",
+      "name": "VidFast",
+      "badge": "4K",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://vidfast.pro/movie/{id}",
+      "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}"
+    },
+    {
+      "_comment": "Videasy — clean embed player, 4K/1080p, supports Movies/TV/Anime.",
+      "id": "videasy",
+      "name": "Videasy",
+      "badge": "4K",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://player.videasy.net/movie/{id}",
+      "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}"
+    },
+    {
+      "_comment": "VidLink — reliable, minimal ads, supports custom accent color.",
+      "id": "vidlink",
+      "name": "VidLink",
+      "badge": "1080p",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c",
+      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c"
+    },
+    {
+      "_comment": "Direct Stream — no iframe, no ads. Tries vidsrc.rip -> vidsrc.xyz API -> FlixHQ in sequence. First working source wins.",
+      "id": "direct",
+      "name": "Direct Stream",
+      "badge": "1080p",
+      "badge2": "No Ads",
+      "imdb": false,
+      "_consumet": true,
+      "_api": "https://api.consumet.org",
+      "movie_url": "consumet:movie:{id}",
+      "tv_url": "consumet:tv:{id}:{s}:{e}"
+    }
+  ],
+  "_direct_stream_note": "The 'direct' server uses the DIRECT_PROVIDERS waterfall in the app JS: it tries vidsrc.rip JSON API first (fastest), then vidsrc.xyz via CORS proxy, then FlixHQ/consumet last. All three return a bare .m3u8 URL played in AFlix's own <video> element — no iframe page, no popup ads. If all three fail it auto-falls back to the next iframe server. For best reliability, self-host consumet on Railway or Render.",
+  "_consumet_note": "FlixHQ uses the consumet API for direct HLS streams — zero ads, zero iframes. Self-host at https://github.com/consumet/api.consumet.org and update _api above, or use a public instance (may be slow/intermittent).",
+  "iptv_playlists": [
+    {
+      "name": "My IPTV",
+      "url": "https://example.com/my-playlist.m3u"
+    },
+    {
+      "name": "Free TV",
+      "url": "https://iptv-org.github.io/iptv/index.m3u"
+    }
+  ]
+}
