@@ -24,7 +24,7 @@
       "tv_url": "https://vidora.su/tv/{id}/{s}/{e}"
     },
     {
-      "_comment": "VidFast — clean player, 4K/1080p, supports Movies/TV/Anime. Has PostMessage API for control.",
+      "_comment": "VidFast — clean player, 4K/1080p, Movies/TV/Anime.",
       "id": "vidfast",
       "name": "VidFast",
       "badge": "4K",
@@ -34,7 +34,7 @@
       "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}"
     },
     {
-      "_comment": "Videasy — clean embed player, 4K/1080p, supports Movies/TV/Anime.",
+      "_comment": "Videasy — clean embed player, 4K/1080p, Movies/TV/Anime.",
       "id": "videasy",
       "name": "Videasy",
       "badge": "4K",
@@ -66,7 +66,7 @@
       "tv_url": "consumet:tv:{id}:{s}:{e}"
     }
   ],
-  "_direct_stream_note": "The 'direct' server uses the DIRECT_PROVIDERS waterfall in the app JS: it tries vidsrc.rip JSON API first (fastest), then vidsrc.xyz via CORS proxy, then FlixHQ/consumet last. All three return a bare .m3u8 URL played in AFlix's own <video> element — no iframe page, no popup ads. If all three fail it auto-falls back to the next iframe server. For best reliability, self-host consumet on Railway or Render.",
+  "_direct_stream_note": "The 'direct' server uses the DIRECT_PROVIDERS waterfall in the app JS: it tries vidsrc.rip JSON API first (fastest), then vidsrc.xyz via CORS proxy, then FlixHQ/consumet last. All three return a bare .m3u8 URL played in AFlix's own <video> element — no iframe page, no popup ads. If all three fail it auto-falls back to the next iframe server.",
   "_consumet_note": "FlixHQ uses the consumet API for direct HLS streams — zero ads, zero iframes. Self-host at https://github.com/consumet/api.consumet.org and update _api above, or use a public instance (may be slow/intermittent).",
   "iptv_playlists": [
     {
