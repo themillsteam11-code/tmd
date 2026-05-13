@@ -4,14 +4,14 @@
   "tmdb_base": "https://api.themoviedb.org/3",
   "servers": [
     {
-      "_comment": "VidLink — reliable, minimal ads, supports custom accent color.",
-      "id": "vidlink",
-      "name": "VidLink",
+      "_comment": "Vidsrc — reliable, minimal ads, supports custom accent color.",
+      "id": "Vidsrc.To",
+      "name": "Vidsrc.To",
       "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "movie_url": "https://vidlink.pro/movie/{id}?autoplay=true&primaryColor=e8192c",
-      "tv_url": "https://vidlink.pro/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c"
+      "movie_url": "https://vidsrc.to/movie/{id}?autoplay=true&primaryColor=e8192c",
+      "tv_url": "https://vidsrc.to/tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c"
     },
     {
       "_comment": "Videasy — clean embed player, 4K/1080p, Movies/TV/Anime.",
