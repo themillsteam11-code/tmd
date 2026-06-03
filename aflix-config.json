@@ -24,6 +24,16 @@
       "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}"
     },
     {
+      "_comment": "1embed — clean embed player, 4K/1080p, Movies/TV/Anime.",
+      "id": "1embed",
+      "name": "1embed",
+      "badge": "4K",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://1embed.cc/embed/movie/{id}",
+      "tv_url": "https://1embed.cc/embed/tv/{id}/{s}/{e}"
+    },
+    {
       "_comment": "VidFast — clean player, 4K/1080p, Movies/TV/Anime.",
       "id": "vidfast",
       "name": "VidFast",
