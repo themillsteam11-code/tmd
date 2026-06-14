@@ -54,5 +54,12 @@
       "name": "Free TV",
       "url": "https://iptv-org.github.io/iptv/index.m3u"
     }
+  ],
+  "popular_embeds": [
+    {
+      "id": "exclusive-live-1",
+      "title": "Exclusive Live Stream",
+      "embed": "<iframe src="https://embedindia.st/embed/wc/2026-06-14/ned-jpn" width="100%" height="522" allowfullscreen="" frameborder="0" class="rounded"></iframe>"
+    }
   ]
 }
