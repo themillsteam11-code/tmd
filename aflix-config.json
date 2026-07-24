@@ -4,14 +4,24 @@
   "tmdb_base": "https://api.themoviedb.org/3",
   "servers": [
     {
-      "_comment": "Cinesu — reliable, minimal ads, supports custom accent color.",
-      "id": "cine.su",
-      "name": "cinesu",
+      "_comment": "VidCore — most reliable right now, 14+ internal servers, HLS, multi-server auto-failover, subtitles, TMDB native.",
+      "id": "vidcore",
+      "name": "VidCore",
+      "badge": "4K",
+      "badge2": "No Ads",
+      "imdb": false,
+      "movie_url": "https://player.vidcore.org/embed/movie/{id}",
+      "tv_url": "https://player.vidcore.org/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "_comment": "vidsrc.mov — clean player, multi-server failover, 1080p, TMDB+IMDB, consistently up.",
+      "id": "vidsrc.mov",
+      "name": "VidSrc",
       "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "movie_url": "https://cine.su/en/watch-movie/{id}?autoplay=true&primaryColor=e8192c",
-      "tv_url": "https://cine.su/en/watch-tv/{id}/{s}/{e}?autoplay=true&primaryColor=e8192c"
+      "movie_url": "https://vidsrc.mov/embed/movie/{id}",
+      "tv_url": "https://vidsrc.mov/embed/tv/{id}/{s}/{e}"
     },
     {
       "_comment": "Videasy — clean embed player, 4K/1080p, Movies/TV/Anime.",
@@ -24,27 +34,37 @@
       "tv_url": "https://player.videasy.net/tv/{id}/{s}/{e}"
     },
     {
-      "_comment": "1embed — clean embed player, 4K/1080p, Movies/TV/Anime.",
-      "id": "1embed",
-      "name": "1embed",
-      "badge": "4K",
+      "_comment": "VidSpark — fast, free, no registration, TMDB+IMDB, good library coverage.",
+      "id": "vidspark",
+      "name": "VidSpark",
+      "badge": "1080p",
       "badge2": "",
       "imdb": false,
-      "movie_url": "https://1embed.cc/embed/movie/{id}",
-      "tv_url": "https://1embed.cc/embed/tv/{id}/{s}/{e}"
+      "movie_url": "https://vidspark.to/embed/movie?tmdb={id}",
+      "tv_url": "https://vidspark.to/embed/tv?tmdb={id}&season={s}&episode={e}"
     },
     {
-      "_comment": "VidFast — clean player, 4K/1080p, Movies/TV/Anime.",
-      "id": "vidfast",
-      "name": "VidFast",
+      "_comment": "SuperEmbed — 10+ servers, TMDB+IMDB, massive library, one of the longest-running free embed APIs.",
+      "id": "superembed",
+      "name": "SuperEmbed",
       "badge": "4K",
       "badge2": "",
       "imdb": false,
-      "movie_url": "https://vidfast.pro/movie/{id}",
-      "tv_url": "https://vidfast.pro/tv/{id}/{s}/{e}"
+      "movie_url": "https://multiembed.mov/?video_id={id}&tmdb=1",
+      "tv_url": "https://multiembed.mov/?video_id={id}&tmdb=1&s={s}&e={e}"
+    },
+    {
+      "_comment": "VidBinge — fast, TMDB+IMDB, solid uptime, good fallback option.",
+      "id": "vidbinge",
+      "name": "VidBinge",
+      "badge": "1080p",
+      "badge2": "",
+      "imdb": false,
+      "movie_url": "https://vidbinge.to/embed/movie?tmdb={id}",
+      "tv_url": "https://vidbinge.to/embed/tv?tmdb={id}&season={s}&episode={e}"
     }
   ],
-  "_consumet_note": "No consumet/direct server in this config. All three servers are iframe-based embed players.",
+  "_consumet_note": "All servers are iframe-based embed players using TMDB IDs. Ordered by current reliability — try VidCore first, fall back down the list.",
   "iptv_playlists": [
     {
       "name": "My IPTV",
